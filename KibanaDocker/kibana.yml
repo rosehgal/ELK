@@ -1,0 +1,5 @@
+server.port : 5601
+server.host : '0.0.0.0'
+elasticsearch.url : http://elas:9200
+
+
