@@ -12,10 +12,8 @@ RUN curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearc
 RUN tar -xf elasticsearch-5.2.2.tar.gz
 RUN rm elasticsearch-5.2.2.tar.gz
 
-
 RUN adduser -D elas
 USER elas
-
 RUN chown -R elas /elasticsearch 
 
 COPY elasticsearch.yml /elasticsearch/elasticsearch-5.2.2/config/elasticsearch.yml
