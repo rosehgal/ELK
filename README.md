@@ -9,3 +9,7 @@ Also There is logstash.conf{i/o separate}
 Just put your \*.log files in LogstashDocker/logs/ directory and open kibana it
 :)
 
+Sometimes we need to increase vm limit
+ ` 
+  sudo sysctl -w vm.max_map_count=262144
+`
